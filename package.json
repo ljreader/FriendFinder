@@ -12,10 +12,9 @@
     "url": "git+https://github.com/ljreader/FriendFinder.git"
   },
   "keywords": [
-    "friend",
-    "finder"
+    "Friend"
   ],
-  "author": "lj reader",
+  "author": "ljreader",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ljreader/FriendFinder/issues"

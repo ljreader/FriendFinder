@@ -2,8 +2,8 @@
 //initialize starting with 'dummy' data
 var friendList = [
     {
-        "name":"Ryan",
-        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name":"Steve",
+        "photo":"https://1drv.ms/i/s!AneOheT2fviYhNUqauBrDS7DaXPYxw",
         "scores":[
             5,
             1,
