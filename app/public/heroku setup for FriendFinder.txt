@@ -1,0 +1,386 @@
+
+LJRea@DESKTOP-L944L10 MINGW64 ~
+$ heroku login
+Enter your Heroku credentials:
+Email: lawrencereader@outlook.com
+Password: ************
+Logged in as lawrencereader@outlook.com
+
+LJRea@DESKTOP-L944L10 MINGW64 ~
+$ git clone https://github.com/ljreader/FriendFinder.git
+Cloning into 'FriendFinder'...
+remote: Counting objects: 101, done.
+remote: Compressing objects: 100% (67/67), done.
+remote: Total 101 (delta 35), reused 88 (delta 22), pack-reused 0R
+Receiving objects: 100% (101/101), 19.04 KiB | 2.72 MiB/s, done.
+Resolving deltas: 100% (35/35), done.
+
+LJRea@DESKTOP-L944L10 MINGW64 ~
+$ cd node-js-getting-started
+bash: cd: node-js-getting-started: No such file or directory
+
+LJRea@DESKTOP-L944L10 MINGW64 ~
+$ ls
+ _netrc
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ FriendFinder/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{815a1c72-055b-11e8-abd3-f85971bb1b4b}.TM.blf
+ NTUSER.DAT{815a1c72-055b-11e8-abd3-f85971bb1b4b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{815a1c72-055b-11e8-abd3-f85971bb1b4b}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~
+$ cd Desktop/UofU/Homework/15-sequelize/FriendFinder/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ ls
+app/  homework_instructions.md  package.json  package-lock.json  server.js
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ cd ..
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ ls
+FriendFinder/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ heroku create
+Creating app... done, boiling-sands-83474
+https://boiling-sands-83474.herokuapp.com/ | https://git.heroku.com/boiling-sands-83474.git
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ heroku apps:rename newname
+Renaming boiling-sands-83474 to newname... !
+ !    Name is already taken
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ heroku apps:rename boiling-sands-83474 FriendFinder
+ !    Unexpected argument: FriendFinder
+ !    See more help with --help
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ --help
+bash: --help: command not found
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ heroku apps:rename newname
+Renaming boiling-sands-83474 to newname... !
+ !    Name is already taken
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ heroku apps:rename FriendFinder
+Renaming boiling-sands-83474 to FriendFinder... !
+ !    Name must start with a letter and can only contain lowercase letters, numbers, and dashes.
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ heroku apps:rename friendfinder
+Renaming boiling-sands-83474 to friendfinder... !
+ !    Name is already taken
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ heroku apps:rename ljreaderfriendfinder
+Renaming boiling-sands-83474 to ljreaderfriendfinder... done
+https://ljreaderfriendfinder.herokuapp.com/ | https://git.heroku.com/ljreaderfriendfinder.git
+Git remote heroku updated
+ !    Don't forget to update git remotes for all other local checkouts of the app.
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ git push heroku master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://git.heroku.com/ljreaderfriendfinder.git'
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ ls
+FriendFinder/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ cd FriendFinder/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ cd ..
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ cd FriendFinder/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git push
+Everything up-to-date
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku ps:scale web=1
+ !    Missing required flag:
+ !    -a, --app APP  app to run command against
+ !    See more help with --help
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ ls
+app/  homework_instructions.md  package.json  package-lock.json  server.js
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku login
+Enter your Heroku credentials:
+Email: lawrencereader@outlook.com
+Password: ************
+Logged in as lawrencereader@outlook.com
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git list
+git: 'list' is not a git command. See 'git --help'.
+
+The most similar commands are
+        bisect
+        rev-list
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ cd ljreaderfriendfinder
+bash: cd: ljreaderfriendfinder: No such file or directory
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ ls
+app/  homework_instructions.md  package.json  package-lock.json  server.js
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ cd app
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder/app (master)
+$ ls
+data/  public/  routing/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder/app (master)
+$ cd ..
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ cd ..
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ ls
+FriendFinder/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize (master)
+$ cd FriendFinder/
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku create
+Creating app... done, powerful-cove-46835
+https://powerful-cove-46835.herokuapp.com/ | https://git.heroku.com/powerful-cove-46835.git
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git push heroku master
+Counting objects: 101, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (89/89), done.
+Writing objects: 100% (101/101), 18.60 KiB | 1.69 MiB/s, done.
+Total 101 (delta 33), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Node.js app detected
+remote:
+remote: -----> Creating runtime environment
+remote:
+remote:        NPM_CONFIG_LOGLEVEL=error
+remote:        NPM_CONFIG_PRODUCTION=true
+remote:        NODE_VERBOSE=false
+remote:        NODE_ENV=production
+remote:        NODE_MODULES_CACHE=true
+remote:
+remote: -----> Installing binaries
+remote:        engines.node (package.json):  unspecified
+remote:        engines.npm (package.json):   unspecified (use default)
+remote:
+remote:        Resolving node version 8.x...
+remote:        Downloading and installing node 8.9.4...
+remote:        Using default npm version: 5.6.0
+remote:
+remote: -----> Restoring cache
+remote:        Skipping cache restore (not-found)
+remote:
+remote: -----> Building dependencies
+remote:        Installing node modules (package.json + package-lock)
+remote:        added 53 packages in 1.916s
+remote:
+remote: -----> Caching build
+remote:        Clearing previous node cache
+remote:        Saving 2 cacheDirectories (default):
+remote:        - node_modules
+remote:        - bower_components (nothing to cache)
+remote:
+remote: -----> Build succeeded!
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 17.9M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://powerful-cove-46835.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/powerful-cove-46835.git
+ * [new branch]      master -> master
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku apps:rename ljfriendfinder
+Renaming powerful-cove-46835 to ljfriendfinder... done
+https://ljfriendfinder.herokuapp.com/ | https://git.heroku.com/ljfriendfinder.git
+Git remote heroku updated
+ !    Don't forget to update git remotes for all other local checkouts of the app.
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git push heroku master
+Everything up-to-date
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git remote rm heroku
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku git:remote -a ljfriendfinder
+set git remote heroku to https://git.heroku.com/ljfriendfinder.git
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku ps:scale web=1
+Scaling dynos... done, now running web at 1:Free
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku open
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku open
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git add .
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git commit -m "make it better"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ gi push heroku master
+bash: gi: command not found
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ git push heroku master
+Everything up-to-date
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku config:set GITHUB_USERNAME=ljreader
+Setting GITHUB_USERNAME and restarting ljfriendfinder... done, v4
+GITHUB_USERNAME: ljreader
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku config
+=== ljfriendfinder Config Vars
+GITHUB_USERNAME: ljreader
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku config:get GITHUB_USERNAME
+ljreader
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku config:unset GITHUB_USERNAME
+Unsetting GITHUB_USERNAME and restarting ljfriendfinder... done, v5
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ cd myapp
+bash: cd: myapp: No such file or directory
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ heroku config:set S3_KEY=8N029N81 S3_SECRET=9s83109d3+583493190
+Setting S3_KEY, S3_SECRET and restarting ljfriendfinder... done, v6
+S3_KEY:    8N029N81
+S3_SECRET: 9s83109d3+583493190
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ node const aws = require('aws-sdk');
+bash: syntax error near unexpected token `('
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ let s3 = new aws.S3({
+bash: syntax error near unexpected token `('
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$   accessKeyId: process.env.S3_KEY,
+bash: accessKeyId:: command not found
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$   secretAccessKey: process.env.S3_SECRET
+bash: secretAccessKey:: command not found
+
+LJRea@DESKTOP-L944L10 MINGW64 ~/Desktop/UofU/Homework/15-sequelize/FriendFinder (master)
+$ });
