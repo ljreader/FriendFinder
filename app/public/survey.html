@@ -197,7 +197,7 @@ $(document).ready(function() {
             var currentURL = window.location.origin;
 
             //AJAX posts the data to friends API.
-            $.post(currentURL + "/api/friends", newFriend, function(data) {
+            $.post(currentURL + "/app/friends.js", newFriend, function(data) {
                 //Grab the result from the AJAX post so that the best match's name and photo are displayed.
                 $("#matchName").text(data.name);
                 $("#matchPic").attr("src", data.profilePic);
