@@ -16,8 +16,7 @@ var friendList = [
             5,
             4,
             1
-        
-    },
+        },
     // Bob
     {
         "name":"Bob",
