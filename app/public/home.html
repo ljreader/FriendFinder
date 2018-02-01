@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
-  <meta charset="UTF-8">
-  <!-- materialize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-  <!-- materialize icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-  <title>Friend Finder</title>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Ei-sc-facebook.svg/768px-Ei-sc-facebook.svg.png">
 </head>
 <body>
-  <div class='container'>
-    <div class='card-panel yellow darken-1 col s12'>
-      <section class='center-align'>
-      <h1><i class="medium material-icons">person_pin</i>Friend Finder</h1>
-      <h4>Answer a few questions... Meet your new best friend.</h4><br>
-      <a href='survey.html' class="waves-effect waves-light btn cyan lighten-1"><i class="material-icons left">comment</i>Take Survey</a>
-      </section>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><i class="fa fa-facebook-official" aria-hidden="true"></i> Welcome to Friend Finder</h1>
+            <hr>
+            <h5 class="text-center ">Answer some fun questions and we will match you with a new friend.</h5>
+            <p><a href="/survey" class="btn btn-success btn-lg text-center" id="toSurveyButton"><i class="fa fa-handshake-o" aria-hidden="true"> </i> Get Started!</a></p>
+        </div>
+        <div class="footer">
+            <a href="api/friends">API Friends List</a><a href="https://github.com/raphatapi/FriendFinder" target="_blank" class="text-center" id="git">Github Repo</a>
+        </div>
     </div>
-    <div class='col s4'>
-      <p><a href='../data/friends.js'>API Friends List</a> | <a href='https://github.com/ljreader/FriendFinder' target= '_blank'>GitHub Repo</a></p>
-    </div>
-  </div>
-
 </body>
 </html>
+
+<style type="text/css">
+a {
+    color: #4267b2;
+    margin-right: 40px;
+}
+
+.jumbotron {
+    background-color: #4267b2;
+    color: whitesmoke;
+}
+
+.btn-success {
+    background-color: whitesmoke;
+    color: #4267b2;
+    border-color: whitesmoke;
+    margin-top: 20px;
+}
+
+.btn-success:hover {
+    background-color: skyblue;
+    border-color: whitesmoke;
+}
+
+hr {
+    border-top: 2px solid whitesmoke;
+}
+
+body {
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+}
+
+#git {
+    font-size: smaller;
+    color: #4267b2;
+}
+
+.footer {
+    margin-top: 40px
+}
+
+</style>
