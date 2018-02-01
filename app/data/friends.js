@@ -1,6 +1,6 @@
 //array that holds all the 'friends' that have taken the survey
 //initialize starting with 'dummy' data
-var friendList = [
+var friends = [
     // Steve
     {
         "name":"Steve Reader",
@@ -172,4 +172,4 @@ var friendList = [
         ]
     },
 ]        
-module.exports = friendList;
+module.exports = friends;
